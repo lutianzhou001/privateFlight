@@ -1,0 +1,10 @@
+type Price {
+	id: ID! @unique
+	country: String!
+	currency : String!
+	locale : String!
+  originPlace: String!
+  destinationPlace: String!
+  outboundpartialdate: String!
+  inboundpartialdate: String!
+}

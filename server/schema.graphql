@@ -1,0 +1,19 @@
+type Price {
+	country: String!
+	currency : String!
+	locale : String!
+  originPlace: String!
+  destinationPlace: String!
+  outboundpartialdate: String!
+  inboundpartialdate: String!
+}
+
+type Query {
+  queryFlight(country:String!,currency:String!,locale:String!,originPlace:String!,destinationPlace:String!,outboundpartialdate:String!,inboundpartialdate:String) : List 
+}
+
+type List {
+  isDirect : Boolean!
+  minPrice : Int!
+}
+
